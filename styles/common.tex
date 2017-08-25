@@ -1,0 +1,164 @@
+
+% -------------------------------------------------------
+%  Common Styles and Formattings
+% -------------------------------------------------------
+
+
+\usepackage{amssymb,amsmath}
+\usepackage[colorlinks,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{graphicx,subfigure,wrapfig}
+\usepackage{geometry,fancyhdr}
+\usepackage[mathscr]{euscript}
+\usepackage{multicol}
+
+\usepackage{algorithmicx,algorithm}
+
+\usepackage[localise=on,extrafootnotefeatures]{xepersian}
+\usepackage[noend]{algpseudocode}
+\input{styles/alg-fa}
+
+
+% -------------------- Page Layout --------------------
+
+
+\newgeometry{top=3.5cm,bottom=3.5cm,left=2.5cm,right=3cm,headheight=25pt}
+
+\renewcommand{\baselinestretch}{1.5}
+\linespread{1.75}
+\setlength{\parskip}{0.5em}
+
+\fancyhf{}
+\rhead{\leftmark}
+\lhead{\thepage}
+
+
+% -------------------- Fonts --------------------
+
+
+\settextfont[Scale=1]{XB Niloofar}
+\setdigitfont[Scale=1]{XB Niloofar}
+
+\defpersianfont\sayeh[Scale=1]{XB Kayhan Pook}
+
+
+% -------------------- Styles --------------------
+
+
+\SepMark{-}
+\renewcommand{\labelitemi}{$\small\bullet$}
+
+
+
+% -------------------- Environments --------------------
+
+
+\newtheorem{قضیه}{قضیه‌ی}[chapter]
+\newtheorem{لم}[قضیه]{لم}
+\newtheorem{ادعا}[قضیه]{ادعای}
+\newtheorem{مشاهده}[قضیه]{مشاهده‌ی}
+\newtheorem{نتیجه}[قضیه]{نتیجه‌ی}
+\newtheorem{مسئله}{مسئله‌ی}[chapter]
+\newtheorem{تعریف}{تعریف}[chapter]
+\newtheorem{مثال}{مثال}[chapter]
+
+
+\newenvironment{اثبات}
+	{\begin{trivlist}\item[\hskip\labelsep{\em اثبات.}]}
+	{\leavevmode\unskip\nobreak\quad\hspace*{\fill}{\ensuremath{{\square}}}\end{trivlist}}
+
+\newenvironment{alg}[2]
+	{\begin{latin}\settextfont[Scale=1.0]{Times New Roman}
+	\begin{algorithm}[t]\caption{#1}\label{algo:#2}\vspace{0.2em}\begin{algorithmic}[1]}
+	{\end{algorithmic}\vspace{0.2em}\end{algorithm}\end{latin}}
+
+
+% -------------------- Titles --------------------
+
+
+\renewcommand{\listfigurename}{فهرست شکل‌ها}
+\renewcommand{\listtablename}{فهرست جدول‌ها}
+\renewcommand{\bibname}{\rl{{مراجع}\hfill}} 
+
+
+% -------------------- Commands --------------------
+
+
+\newcommand{\IN}{\ensuremath{\mathbb{N}}} 
+\newcommand{\IZ}{\ensuremath{\mathbb{Z}}} 
+\newcommand{\IQ}{\ensuremath{\mathbb{Q}}} 
+\newcommand{\IR}{\ensuremath{\mathbb{R}}} 
+\newcommand{\IC}{\ensuremath{\mathbb{C}}} 
+
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\seq}[1]{\left< #1 \right>}
+\newcommand{\ceil}[1]{\left\lceil{#1}\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor{#1}\right\rfloor}
+\newcommand{\card}[1]{\left|{#1}\right|}
+\newcommand{\setcomp}[1]{\overline{#1}}
+\newcommand{\provided}{\,:\,}
+\newcommand{\divs}{\mid}
+\newcommand{\ndivs}{\nmid}
+\newcommand{\iequiv}[1]{\,\overset{#1}{\equiv}\,}
+\newcommand{\imod}[1]{\allowbreak\mkern5mu(#1\,\,\text{پیمانه‌ی})}
+
+\newcommand{\poly}{\mathop{\mathrm{poly}}}
+\newcommand{\polylog}{\mathop{\mathrm{polylog}}}
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\lee}{\leqslant}
+\newcommand{\gee}{\geqslant}
+\renewcommand{\leq}{\lee}
+\renewcommand{\le}{\lee}
+\renewcommand{\geq}{\gee}
+\renewcommand{\ge}{\gee}
+
+\newcommand{\مهم}[1]{\textbf{#1}}
+\renewcommand{\برچسب}{\label}
+
+\newcommand{\REM}[1]{}
+\renewcommand{\حذف}{\REM}
+\newcommand{\لر}{\lr}
+\newcommand{\کد}[1]{\lr{\tt #1}}
+\newcommand{\پاورقی}[1]{\footnote{\lr{#1}}}
+
+
+
+% -------------------- Dictionary --------------------
+
+
+\newcommand{\dicalphabet}[1]{
+\begin{minipage}{\columnwidth}
+	\centerline{\noindent\textbf{\large #1 }}
+	\vspace{.5em}
+\end{minipage}
+\nopagebreak[4]
+}
+
+\newcommand{\dic}[2]{\noindent  #2 \dotfill  \lr{#1} \\ }
+
+
+% ------------------------------ Images and Figures --------------------------
+
+\graphicspath{{figs/}}
+\setlength{\intextsep}{0pt}  % for float boxes
+\renewcommand{\psscalebox}[1]{}  % for LaTeX Draw
+
+\newcommand{\floatbox}[2]
+	{\begin{wrapfigure}{l}{#1}
+	\centering #2 \end{wrapfigure}}
+
+\newcommand{\centerfig}[2]
+	{\centering\scalebox{#2}{\input{figs/#1}}}
+
+\newcommand{\fig}[3]
+	{\floatbox{#3}{\centerfig{#1}{#2}}}
+
+\newcommand{\centerimg}[2]
+	{\vspace{1em}\begin{center}\includegraphics[width=#2]{figs/#1}\end{center}\vspace{-1.5em}}
+
+\NewDocumentCommand{\img}{m m o}
+	{\begin{wrapfigure}{l}{\IfValueTF{#3}{#3}{#2}}
+	\centering\includegraphics[width=#2]{figs/#1}\end{wrapfigure}}
+
+

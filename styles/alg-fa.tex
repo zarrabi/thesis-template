@@ -1,0 +1,35 @@
+
+
+%------------------------ Algorithm ------------------------------------
+
+\newenvironment{الگوریتم}[1]
+	{\bigskip\bigskip\begin{algorithm}\caption{#1} \label{الگوریتم: #1}\vspace{0.5em}\begin{algorithmic}[1]}
+	{\end{algorithmic}\vspace{0.5em}\end{algorithm}\bigskip}
+	
+
+\renewcommand{\algorithmicfor}{{به ازای}}
+\renewcommand{\algorithmicwhile}{{تا وقتی}}
+\renewcommand{\algorithmicdo}{\hspace{-.2em}:}
+\renewcommand{\algorithmicif}{{اگر}}
+\renewcommand{\algorithmicthen}{\hspace{-.2em}:}
+\renewcommand{\algorithmicelse}{{در غیر این صورت:}}
+%\renewcommand{\algorithmicelsif}{{در غیر این صورت اگر: }}
+\renewcommand{\algorithmicreturn}{{برگردان}}
+\renewcommand{\algorithmiccomment}[1]{$\triangleleft$ \emph{#1}}
+\renewcommand{\algorithmicrequire}{\textbf{ورودی:}}
+\renewcommand{\algorithmicensure}{\textbf{خروجی:}}
+
+\newcommand{\اگر}{\If}
+\newcommand{\وگرنه}{\Else}
+\newcommand{\وگر}{\ElsIf}
+\newcommand{\پایان‌اگر}{\EndIf}
+\newcommand{\به‌ازای}{\For}
+\newcommand{\پایان‌به‌ازای}{\EndFor}
+\newcommand{\تاوقتی}{\While}
+\newcommand{\پایان‌تاوقتی}{\EndWhile}
+\newcommand{\دستور}{\State}
+\newcommand{\دستورک}{\Statex}
+\newcommand{\توضیحات}{\Comment}
+\newcommand{\برگردان}{\Return}
+\renewcommand{\ورودی}{\Require}
+\newcommand{\خروجی}{\Ensure}

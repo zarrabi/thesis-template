@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="joinedLines" id="id12">
+            <polyline
+                points="540.0,140.0 460.0,240.0 620.0,240.0 540.0,140.0 "
+                stroke-width="2.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="circle" id="id5">
+            <circle cx="460.0" cy="240.0" r="19.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ffcc33"/>
+        </g>
+        <g latexdraw:type="circle" id="id6">
+            <circle cx="620.0" cy="240.0" r="19.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ffcc33"/>
+        </g>
+        <g latexdraw:type="circle" id="id8">
+            <circle cx="540.0" cy="140.0" r="19.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="white"/>
+        </g>
+        <g latexdraw:type="text" id="id17" fill="black" latexdraw:position="bl">
+            <text x="540.0" y="140.0"><![CDATA[1]]></text>
+        </g>
+        <g latexdraw:type="text" id="id18" fill="black" latexdraw:position="bl">
+            <text x="460.0" y="240.0"><![CDATA[2]]></text>
+        </g>
+        <g latexdraw:type="text" id="id19" fill="black" latexdraw:position="bl">
+            <text x="620.0" y="240.0"><![CDATA[3]]></text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes><![CDATA[
+]]></latexdraw:latexIncludes>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.0.0</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1280</latexdraw:width>
+                <latexdraw:height>785</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>0.0</latexdraw:x>
+                <latexdraw:y>0.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

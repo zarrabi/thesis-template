@@ -1,0 +1,90 @@
+
+%--------------------------------------------------------------------------
+%
+%  M.Sc. Thesis
+%  [Put Your Thesis Title Here]
+%  By: [Put Your Name Here]
+%
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+%
+%  LaTeX Thesis Template (v2.1)
+%  By: Hamid Zarrabi-Zadeh
+%
+%  Contributors:
+%      Ehsan Emamjomeh-Zadeh
+%      Omid Gheibi
+%
+%--------------------------------------------------------------------------
+
+
+\documentclass[oneside,a4paper,11pt]{book}
+
+\input{styles/common.tex}
+\input{styles/custom.tex}
+
+\begin{document}
+
+
+% -------------------- Front Pages --------------------
+
+%\pagenumbering{alph}
+
+\input{front/info.tex}
+\input{front/template/title.tex}
+
+\input{front/template/besmellah.tex}
+\input{front/template/signatures.tex}
+
+%\input{front/acknowledge.tex}
+\input{front/abstract.tex}
+
+
+% -------------------- Table of Contents --------------------
+
+
+\pagestyle{fancy}
+
+\tableofcontents \newpage
+\listoffigures \newpage
+\listoftables \newpage
+
+%\pagenumbering{arabic}
+
+% -------------------- Chapters --------------------
+
+\include{chapters/guide}
+\include{chapters/writing}
+\include{chapters/introduction}
+\include{chapters/definitions}
+\include{chapters/literature}
+\include{chapters/results}
+\include{chapters/conclusions}
+
+
+% -------------------- Appendices --------------------
+
+\begin{appendix}
+\include{chapters/appendix}
+\end{appendix}
+
+% -------------------- Bibliography --------------------
+
+
+\input{bibs/bibs.tex}
+
+
+% -------------------- English Pages --------------------
+
+
+\newgeometry{left=3cm,right=2.5cm}
+
+\input{front/dictionary}
+\input{front/abstract-eng.tex}
+\input{front/template/title-eng.tex}
+
+
+% -------------------- The End! --------------------
+
+\end{document}

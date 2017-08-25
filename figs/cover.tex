@@ -1,0 +1,20 @@
+% \usepackage[usenames,dvipsnames]{pstricks}
+% \usepackage{epsfig}
+% \usepackage{pst-grad} % For gradients
+% \usepackage{pst-plot} % For axes
+% User Packages:
+% 
+% 
+\psscalebox{1.0 1.0} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.4)(4.0,1.4)
+\definecolor{colour0}{rgb}{1.0,0.8,0.2}
+\psline[linecolor=black, linewidth=0.04](2.0,1.0)(0.4,-1.0)(3.6,-1.0)(2.0,1.0)
+\pscircle[linecolor=black, linewidth=0.04, fillstyle=solid,fillcolor=colour0, dimen=outer](0.4,-1.0){0.4}
+\pscircle[linecolor=black, linewidth=0.04, fillstyle=solid,fillcolor=colour0, dimen=outer](3.6,-1.0){0.4}
+\pscircle[linecolor=black, linewidth=0.04, fillstyle=solid, dimen=outer](2.0,1.0){0.4}
+\rput(2.0,1.0){1}
+\rput(0.4,-1.0){2}
+\rput(3.6,-1.0){3}
+\end{pspicture}
+}
