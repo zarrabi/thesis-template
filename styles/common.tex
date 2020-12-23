@@ -24,9 +24,9 @@
 
 \newgeometry{top=3.5cm,bottom=3.5cm,left=2.5cm,right=3cm,headheight=25pt}
 
-\renewcommand{\baselinestretch}{1.5}
-\linespread{1.75}
-\setlength{\parskip}{0.5em}
+\renewcommand{\baselinestretch}{1.4}
+\linespread{1.6}
+\setlength{\parskip}{0.45em}
 
 \fancyhf{}
 \rhead{\leftmark}
@@ -36,17 +36,26 @@
 % -------------------- Fonts --------------------
 
 \settextfont[
-Extension=.ttf,
+Scale=1.09,
+Extension=.ttf, 
 Path=styles/fonts/,
-Scale=1,
+BoldFont=XB NiloofarBd,
+ItalicFont=XB NiloofarIt,
+BoldItalicFont=XB NiloofarBdIt
+]{XB Niloofar}
+
+\setdigitfont[
+Scale=1.09,
+Extension=.ttf, 
+Path=styles/fonts/,
 BoldFont=XB NiloofarBd,
 ItalicFont=XB NiloofarIt,
 BoldItalicFont=XB NiloofarBdIt
 ]{XB Niloofar}
 
 \defpersianfont\sayeh[
-Path=styles/fonts/,
-Scale=1
+Scale=1,
+Path=styles/fonts/
 ]{XB Kayhan Pook}
 
 
