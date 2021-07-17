@@ -6,6 +6,7 @@
 
 \usepackage{amssymb,amsmath}
 \usepackage[colorlinks,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage{minitoc} %table of content for each chapter
 \usepackage[usenames,dvipsnames]{pstricks}
 \usepackage{graphicx,subfigure,wrapfig}
 \usepackage{geometry,fancyhdr}
@@ -179,3 +180,6 @@ Path=styles/fonts/
 	\centering\includegraphics[width=#2]{figs/#1}\end{wrapfigure}}
 
 
+% for table of content in each Chapter
+\renewcommand{\mtctitle}{مطالب این فصل}
+\renewcommand{\mtifont}{\bf}
