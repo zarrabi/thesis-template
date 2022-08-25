@@ -9,7 +9,7 @@
 
 %--------------------------------------------------------------------------
 %
-%  LaTeX Thesis Template (v2.2)
+%  LaTeX Thesis Template (v3)
 %  By: Hamid Zarrabi-Zadeh
 %
 %  Contributors:
@@ -29,40 +29,44 @@
 
 % -------------------- Front Pages --------------------
 
-%\pagenumbering{alph}
+\include{front/info}
+\include{front/template/title}
+\input{front/template/besmellah.tex}‌
 
-\input{front/info.tex}
-\input{front/template/title.tex}
+% uncomment for MS and PhD theses
+%\include{front/template/signatures}  % تصویب‌نامه
+%\include{front/template/declaration}  % اظهارنامه
 
-\input{front/template/besmellah.tex}
 
-% Uncomment the following line for adding signature page
-%\input{front/template/signatures.tex}
+\pagestyle{plain}
+\pagenumbering{tartibi}
+\include{front/acknowledge}  % تقدیر و تشکر
 
-%\input{front/acknowledge.tex}
-\input{front/abstract.tex}
+\include{front/abstract}
 
 
 % -------------------- Table of Contents --------------------
 
-
-\pagestyle{fancy}
-
 \tableofcontents \newpage
-\listoffigures \newpage
 \listoftables \newpage
+\listoffigures \newpage
 
-%\pagenumbering{arabic}
 
 % -------------------- Chapters --------------------
 
-\include{chapters/guide}
-\include{chapters/writing}
+\pagenumbering{arabic}
+
 \include{chapters/introduction}
-\include{chapters/definitions}
+\include{chapters/preliminaries}
 \include{chapters/literature}
 \include{chapters/results}
 \include{chapters/conclusions}
+
+
+% -------------------- Bibliography & Dictionary --------------------
+
+\include{bibs/bibs}
+\include{front/dictionary}
 
 
 % -------------------- Appendices --------------------
@@ -71,20 +75,13 @@
 \include{chapters/appendix}
 \end{appendix}
 
-% -------------------- Bibliography --------------------
-
-
-\input{bibs/bibs.tex}
-
 
 % -------------------- English Pages --------------------
 
+%\newgeometry{left=3cm,right=2.5cm}
 
-\newgeometry{left=3cm,right=2.5cm}
-
-\input{front/dictionary}
-\input{front/abstract-eng.tex}
-\input{front/template/title-eng.tex}
+\include{front/abstract-eng}
+\include{front/template/title-eng}
 
 
 % -------------------- The End! --------------------

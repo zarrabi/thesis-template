@@ -8,9 +8,11 @@
 \usepackage[colorlinks,linkcolor=blue,citecolor=blue]{hyperref}
 \usepackage[usenames,dvipsnames]{pstricks}
 \usepackage{graphicx,subfigure,wrapfig}
-\usepackage{geometry,fancyhdr}
+\usepackage{geometry}
 \usepackage[mathscr]{euscript}
 \usepackage{multicol}
+\usepackage{multirow}
+\usepackage[figureposition=bottom,tableposition=top,font={small,bf},labelfont=bf]{caption}
 
 \usepackage{algorithmicx,algorithm}
 
@@ -22,15 +24,16 @@
 % -------------------- Page Layout --------------------
 
 
-\newgeometry{top=3.5cm,bottom=3.5cm,left=2.5cm,right=3cm,headheight=25pt}
+%\newgeometry{top=3cm,bottom=3.5cm,left=2.5cm,right=3cm,footskip=1cm}
+\newgeometry{margin=1in,bottom=1.1in,footskip=.4in}
 
 \renewcommand{\baselinestretch}{1.4}
 \linespread{1.6}
 \setlength{\parskip}{0.45em}
 
-\fancyhf{}
-\rhead{\leftmark}
-\lhead{\thepage}
+%\fancyhf{}
+%\rhead{\leftmark}
+%\lhead{\thepage}
 
 
 % -------------------- Fonts --------------------
