@@ -9,7 +9,7 @@
 
 %--------------------------------------------------------------------------
 %
-%  LaTeX Thesis Template (v3)
+%  LaTeX Thesis Template (v4)
 %  By: Hamid Zarrabi-Zadeh
 %
 %  Contributors:
@@ -30,18 +30,18 @@
 % -------------------- Front Pages --------------------
 
 \include{front/info}
+\pagestyle{empty}
+
 \include{front/template/title}
-\input{front/template/besmellah.tex}‌
+%\input{front/template/besmellah.tex}‌  % بسم‌الله
 
-% uncomment for MS and PhD theses
-%\include{front/template/signatures}  % تصویب‌نامه
+\include{front/template/signatures}  % تصویب‌نامه
 %\include{front/template/declaration}  % اظهارنامه
-
 
 \pagestyle{plain}
 \pagenumbering{tartibi}
-\include{front/acknowledge}  % تقدیر و تشکر
 
+\include{front/acknowledge}  % تقدیر و تشکر
 \include{front/abstract}
 
 

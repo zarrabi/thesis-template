@@ -219,5 +219,7 @@ TSWLatexianTemp*
 # expex forward references with \gathertags
 *-tags.tex
 
-
 Thumbs.db
+
+# the main pdf file is usually excluded
+# thesis.pdf
