@@ -1,0 +1,27 @@
+---
+name: Build thesis template
+
+on:
+  push:
+#     branches: [ "master" ]
+    branches: [ "feature/build-pipeline" ]
+  pull_request:
+#     branches: [ "master" ]
+    branches: [ "feature/build-pipeline" ]
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: thesis.tex
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: thesis.pdf        
