@@ -20,6 +20,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: thesis.tex
+          latexmk_use_xelatex: true
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
