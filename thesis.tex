@@ -1,22 +1,18 @@
 
-%--------------------------------------------------------------------------
+%  PLEASE DO NOT REMOVE OR CHANGE THIS BLOCK
+%  ===========================================================
 %
-%  M.Sc. Thesis
-%  [Put Your Thesis Title Here]
-%  By: [Put Your Name Here]
-%
-%--------------------------------------------------------------------------
-
-%--------------------------------------------------------------------------
-%
-%  LaTeX Thesis Template (v4)
+%  A LaTeX Template for Typesetting Theses in Persian
 %  By: Hamid Zarrabi-Zadeh
+%  Source: https://github.com/zarrabi/thesis-template
 %
-%  Contributors:
-%      Ehsan Emamjomeh-Zadeh
-%      Omid Gheibi
+%  License: Creative Commons Attribution 4.0
+%  https://creativecommons.org/licenses/by/4.0/
 %
-%--------------------------------------------------------------------------
+%  Contributors: Ehsan Emamjomeh-Zadeh and Omid Gheibi
+%  See the full list of contributors at GitHub.
+%
+%  ===========================================================
 
 
 \documentclass[oneside,a4paper,12pt]{book}
@@ -31,17 +27,18 @@
 
 \include{front/info}
 \pagestyle{empty}
-
 \include{front/template/title}
-%\input{front/template/besmellah.tex}‌  % بسم‌الله
 
-\include{front/template/signatures}  % تصویب‌نامه
-%\include{front/template/declaration}  % اظهارنامه
+% info: برای درج هر یک از صفحات زیر، خط مربوطه را فعال کنید
+
+%\include{front/template/besmellah}  % صفحه بسم الله
+%\include{front/template/signatures}  % صفحه تصویب‌نامه
+%\include{front/template/declaration}  % صفحه اظهارنامه
 
 \pagestyle{plain}
 \pagenumbering{tartibi}
 
-\include{front/acknowledge}  % تقدیر و تشکر
+\include{front/acknowledge}  % صفحه سپاس
 \include{front/abstract}
 
 
@@ -63,7 +60,7 @@
 \include{chapters/conclusions}
 
 
-% -------------------- Bibliography & Dictionary --------------------
+% -------------- Bibliography & Dictionary ---------------
 
 \include{bibs/bibs}
 \include{front/dictionary}
@@ -80,6 +77,7 @@
 
 %\newgeometry{left=3cm,right=2.5cm}
 
+\pagestyle{empty}
 \include{front/abstract-eng}
 \include{front/template/title-eng}
 
@@ -87,3 +85,4 @@
 % -------------------- The End! --------------------
 
 \end{document}
+
