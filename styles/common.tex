@@ -35,8 +35,10 @@
 %\rhead{\leftmark}
 %\lhead{\thepage}
 
+\sloppy
 
-% -------------------- Fonts --------------------
+
+% -------------------- Default Font --------------------
 
 \settextfont[
 Scale=1.09,
@@ -56,6 +58,24 @@ ItalicFont=XB NiloofarIt,
 BoldItalicFont=XB NiloofarBdIt
 ]{XB Niloofar}
 
+
+% -------------------- Sharif Font --------------------
+
+\newcommand{\shariffont}{
+\settextfont[
+Scale=1.4,
+Extension=.ttf, 
+Path=styles/fonts/,
+BoldFont=Sharif1.3-SemiBold,
+]{Sharif1.3-Regular}
+
+\setdigitfont[
+Scale=1.4,
+Extension=.ttf, 
+Path=styles/fonts/,
+BoldFont=Sharif1.3-SemiBold,
+]{Sharif1.3-Regular}
+}
 
 % -------------------- Styles --------------------
 
