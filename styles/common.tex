@@ -1,6 +1,6 @@
 
 % -------------------------------------------------------
-%  Common Styles and Formattings
+%  Common Styles and Formatting
 % -------------------------------------------------------
 
 
@@ -13,19 +13,22 @@
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage[figureposition=bottom,tableposition=top,font={small,bf},labelfont=bf]{caption}
-
 \usepackage{algorithmicx,algorithm}
 
-\usepackage[localise=on,extrafootnotefeatures]{xepersian}
+\ifnewXePer
+  \usepackage[localize,extrafootnotefeatures]{xepersian}
+\else
+  \usepackage[localise,extrafootnotefeatures]{xepersian}
+\fi
+
 \usepackage[noend]{algpseudocode}
 \input{styles/alg-fa}
 
 
 % -------------------- Page Layout --------------------
 
-
-%\newgeometry{top=3cm,right=3cm,left=2.5cm,bottom=3cm,footskip=1.25cm}
 \newgeometry{margin=1in,bottom=1.1in,footskip=.4in}
+%\newgeometry{top=3cm,right=3cm,left=2.5cm,bottom=3cm,footskip=1.25cm}
 
 \renewcommand{\baselinestretch}{1.4}
 \linespread{1.6}
@@ -79,14 +82,11 @@ BoldFont=Sharif1.3-SemiBold,
 
 % -------------------- Styles --------------------
 
-
 \SepMark{-}
 \renewcommand{\labelitemi}{$\small\bullet$}
 
 
-
 % -------------------- Environments --------------------
-
 
 \newtheorem{قضیه}{قضیه‌ی}[chapter]
 \newtheorem{لم}[قضیه]{لم}
@@ -110,14 +110,12 @@ BoldFont=Sharif1.3-SemiBold,
 
 % -------------------- Titles --------------------
 
-
 \renewcommand{\listfigurename}{فهرست شکل‌ها}
 \renewcommand{\listtablename}{فهرست جدول‌ها}
 \renewcommand{\bibname}{\rl{{مراجع}\hfill}} 
 
 
 % -------------------- Commands --------------------
-
 
 \newcommand{\IN}{\ensuremath{\mathbb{N}}} 
 \newcommand{\IZ}{\ensuremath{\mathbb{Z}}} 
@@ -158,9 +156,7 @@ BoldFont=Sharif1.3-SemiBold,
 \newcommand{\پاورقی}[1]{\footnote{\lr{#1}}}
 
 
-
 % -------------------- Dictionary --------------------
-
 
 \newcommand{\dicalphabet}[1]{
 \begin{minipage}{\columnwidth}
